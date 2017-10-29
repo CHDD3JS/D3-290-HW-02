@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>作業#4</title>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+</head>
+<body>
+        <script>
+            var random = function(N,M){
+            var num = Math.random()*(M-N+1)+N;
+            return Math.floor(num);
+            };
+            
+            var svg = d3.select("body").append("svg").attr({
+            "width": 600,
+            "height": 1200
+            });
+            
+            for(var i=0; i<20; i=i+1)
+            {
+            var X = random(20,300);
+            
+            svg.append("rect").attr({
+                x: 10,
+                y: 10+15*i,
+                width: X,
+                height: 10,
+                fill: "red"
+            })
+            svg.append("text").attr({
+                x: 10+X+15,
+                y: 10+15*i+10,
+                "font-size": 12
+            }).text(X)
+                };
+        </script>
+
+</body>
+</html>

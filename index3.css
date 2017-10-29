@@ -1,0 +1,11 @@
+p{
+  width: 6em;
+  height: 1em;
+  padding: .5em;
+  border: 2px solid red;
+}
+
+input[type="button"]{
+  width: 3em;
+  font-size: 2em;
+}

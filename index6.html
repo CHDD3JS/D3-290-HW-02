@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>作業#5</title>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+</head>
+<body>
+
+<script>
+
+    function random(n,m){
+    return Math.ceil(Math.random()*(m-n)+n);
+    };
+
+    
+points = points+(10+thisNum)+","+(10+12*(i+1))+" ";
+  
+  d3.select("svg")
+    .append('circle')
+    .attr({
+    cx: 10+thisNum,
+    cy: 10+12*(i+1),
+    r: 3,
+    fill: "red"
+  });
+
+  d3.select("svg")
+    .append("text")
+    .attr({
+    x: thisNum+15,
+    y: 25+12*i,
+    "font-size": 12
+  }).text(thisNum);
+  lastNum = thisNum ;
+}
+points = points+"10,"+(21*12+10);
+
+d3.select("svg")
+    .append("polyline")
+    .attr({
+      "points": points,
+      "fill": "rgba(0,0,0,0)",
+      "stroke": "#333",
+    });
+
+    
+</script>
+
+
+
+</body>
+</html>

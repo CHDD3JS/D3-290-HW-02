@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>作業#2</title>
+    <link rel="stylesheet" type="text/css" href="index3.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+</head>
+
+<body>
+
+<p></p>
+
+<input type="button" onclick="launch()" value="啟動">
+
+ <script>
+  function launch(){   
+//      return Math.random(1911,2016);
+      return d3.select("p").text(Math.random(1911,2016));
+  }
+</script>
+
+</body>
+</html>
